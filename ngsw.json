@@ -1,0 +1,108 @@
+{
+  "configVersion": 1,
+  "timestamp": 1766973503679,
+  "index": "C:/Program Files/Git/ghibli-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/ghibli-pwa/favicon.ico",
+        "C:/Program Files/Git/ghibli-pwa/index.html",
+        "C:/Program Files/Git/ghibli-pwa/main-FLTG7SRI.js",
+        "C:/Program Files/Git/ghibli-pwa/manifest.webmanifest",
+        "C:/Program Files/Git/ghibli-pwa/polyfills-B6TNHZQ6.js",
+        "C:/Program Files/Git/ghibli-pwa/styles-52WF6A3K.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-128x128.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-144x144.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-152x152.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-192x192.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-384x384.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-512x512.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-72x72.png",
+        "C:/Program Files/Git/ghibli-pwa/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "ghibli-api",
+      "patterns": [
+        "https:\\/\\/ghibliapi\\.vercel\\.app\\/films",
+        "https:\\/\\/ghibliapi\\.vercel\\.app\\/films\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "timeoutMs": 2000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "remote-images",
+      "patterns": [
+        "https:\\/\\/(?:.+\\/)?[^/]*\\.(png|jpg|jpeg|webp|gif)"
+      ],
+      "strategy": "performance",
+      "maxSize": 200,
+      "maxAge": 604800000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "C:/Program Files/Git/ghibli-pwa/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-128x128.png": "222a854ae3f772eeeb4905108328cfa9cbef51b3",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-144x144.png": "12c3d1310551f0966e6441cdc0c71e0f00414105",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-152x152.png": "8bd334434e6e44e86ad73bb2b74c49cc9d52934a",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-192x192.png": "4452c2a2c53d4c31f830e5679bae145c7feeeafd",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-384x384.png": "57efb9f5bba58c91e1ddbeb924cd5407b2c1f8dc",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-512x512.png": "1dc522c37b1cfdc946e9869c89500edb8fe23a03",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-72x72.png": "3c57a14c45193d6509435252697025a58928e27b",
+    "C:/Program Files/Git/ghibli-pwa/icons/icon-96x96.png": "8cd800923310655f20f7b3d5123ca20cabbbacab",
+    "C:/Program Files/Git/ghibli-pwa/index.html": "f0fea35e3012ae0d7f82caf5c458a459e9a4ae1d",
+    "C:/Program Files/Git/ghibli-pwa/main-FLTG7SRI.js": "a6162457b20f91d088370110576c741b300b085f",
+    "C:/Program Files/Git/ghibli-pwa/manifest.webmanifest": "254fd23707a0a66671227e141b402a20b102e02f",
+    "C:/Program Files/Git/ghibli-pwa/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "C:/Program Files/Git/ghibli-pwa/styles-52WF6A3K.css": "26e99687073bfa5664d299f14df59f42d88b9f0c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
