@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  padding: 15px;  
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;          // 👈 espai entre cards
+}

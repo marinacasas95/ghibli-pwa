@@ -1,0 +1,28 @@
+@if (loading) {
+<div class="center"><mat-spinner></mat-spinner></div>
+} @else if (film) {
+<div class="detail-header">
+    <h2>{{ film.title }}</h2>
+    <button mat-stroked-button routerLink="/">Back</button>
+</div>
+<div class="banner-wrap">
+    <img class="banner-img" [src]="film.movie_banner" [alt]="film.title" />
+</div>
+
+
+
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Show all details</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p><strong>Original:</strong> {{ film.original_title }}</p>
+        <p><strong>Director:</strong> {{ film.director }}</p>
+        <p><strong>Producer:</strong> {{ film.producer }}</p>
+        <p><strong>Any:</strong> {{ film.release_date }}</p>
+        <p><strong>Durada:</strong> {{ film.running_time }} min</p>
+        <p><strong>Descripció:</strong> {{ film.description }}</p>
+    </mat-expansion-panel>
+</mat-accordion>
+}

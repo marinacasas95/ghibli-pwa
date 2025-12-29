@@ -1,0 +1,29 @@
+.detail-header {
+  display: flex;
+  justify-content: space-between; // 👈 clau
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+:host {
+  display: block;
+  padding: 15px;
+}
+
+:host ::ng-deep  .banner-wrap {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 12px 0 16px;
+  position: relative;     // clau
+}
+
+:host ::ng-deep  .banner-img {
+  position: absolute;     // clau: fora del flux
+  inset: 0;               // top/right/bottom/left: 0
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

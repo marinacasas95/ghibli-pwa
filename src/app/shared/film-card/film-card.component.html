@@ -1,0 +1,10 @@
+<mat-card class="film-card" (click)="goDetail()">
+    <div class="image-wrapper">
+        <img [src]="film.image" [alt]="film.title" />
+    </div>
+
+    <mat-card-content>
+        <h3>{{ film.title }}</h3>
+        <mat-card-subtitle>{{ film.director }} · {{ film.release_date }}</mat-card-subtitle>
+    </mat-card-content>
+</mat-card>
