@@ -2,8 +2,8 @@
   "name": "ghibli-pwa",
   "short_name": "ghibli-pwa",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "/ghibli-pwa/",
+  "start_url": "/ghibli-pwa/",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
